@@ -1,0 +1,12 @@
+[package]
+authors = ["Tamer Elzein <tamer@tamerudition.com>"]
+description = "An expressive API for the characters of the Arabic script."
+documentation = "https://docs.rs/arabic-script"
+edition = "2021"
+homepage = "https://github.com/tamerudition/arabic-script"
+keywords = ["arabic", "unicode"]
+license = "Apache-2.0"
+name = "arabic-script"
+readme = "README.md"
+repository = "https://github.com/tamerudition/arabic-script"
+version = "0.1.0"
