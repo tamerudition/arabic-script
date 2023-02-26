@@ -34,8 +34,8 @@ The advantages of this API are...
 3. The standardized names of characters makes it much easier to refer to, and legibly identify, them
    in source code and other situations when a proper typeface is not available.
 
-All the things you can do with this abstraction are things you can do, albeit with a considerable
-amount of effort and mental gymnastics, using the Rust-native `char`. What this library provides are
+All the things you can do with this abstraction are things you can do, albeit with non-trivial
+effort and mental gymnastics, using the Rust-native `char`. What this library provides are
 clarity, consistency, and ease-of-use.
 
 

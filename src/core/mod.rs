@@ -12,17 +12,11 @@
  * and limitations under the License.                                                             *
  **************************************************************************************************/
 
-//! # The Arabic Script Library
-//!
-//! **The Arabic Script Library** provides a clear, legible, and universally usable representation
-//! of all the standard characters of the Arabic script.
-//!
-//! Each letter, diacritical mark, numerical digit, and additional symbol is available under its
-//! standardized Unicode name, providing easy access to all Arabic characters, with none of the
-//! hassle of manipulating primitive Rust characters or Unicode code points.
+//! The **Core** module houses the internal structure of the library.
 
-pub use crate::core::ArabicCharacter;
-pub use crate::core::ArabicCharacter::ArabicLetterDad;
-pub use crate::core::UnicodeCharacter;
+pub use arabic_character::ArabicCharacter;
+pub use unicode_character::UnicodeCharacter;
 
-mod core;
+mod arabic_character;
+mod characters;
+mod unicode_character;

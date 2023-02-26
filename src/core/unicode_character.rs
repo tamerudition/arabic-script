@@ -12,17 +12,14 @@
  * and limitations under the License.                                                             *
  **************************************************************************************************/
 
-//! # The Arabic Script Library
-//!
-//! **The Arabic Script Library** provides a clear, legible, and universally usable representation
-//! of all the standard characters of the Arabic script.
-//!
-//! Each letter, diacritical mark, numerical digit, and additional symbol is available under its
-//! standardized Unicode name, providing easy access to all Arabic characters, with none of the
-//! hassle of manipulating primitive Rust characters or Unicode code points.
+/// This trait ensures that a character exposes its Unicode owning block, name, and scalar value.
+pub trait UnicodeCharacter {
+    /// Returns the Unicode block of the character.
+    fn block(&self) -> &'static str;
 
-pub use crate::core::ArabicCharacter;
-pub use crate::core::ArabicCharacter::ArabicLetterDad;
-pub use crate::core::UnicodeCharacter;
+    /// Returns the Unicode name of the character.
+    fn name(&self) -> &'static str;
 
-mod core;
+    /// Returns the Unicode scalar value of the character, which is equivalent to a Rust [`char`].
+    fn scalar_value(&self) -> char;
+}
